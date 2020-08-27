@@ -1,15 +1,37 @@
 <script>
+  import { each } from "svelte/internal";
   import Card from "./Card.svelte";
   import Compo1 from "./Compo1.svelte";
   import Compo2 from "./Compo2.svelte";
 
   const data = [
     {
-      title: "Meu titulo 1",
+      title: "First Card",
       cover: "https://static.toiimg.com/photo/72975551.cms",
     },
     {
-      title: "Meu titulo 2",
+      title: "Second Card",
+      menbersOnly: true,
+      cover:
+        "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+    },
+    {
+      title: "Third Card",
+      cover: "https://static.toiimg.com/photo/72975551.cms",
+    },
+    {
+      title: "Fourth Card",
+      cover:
+        "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
+      menbersOnly: true,
+    },
+    {
+      title: "Fifth Card",
+      cover: "https://static.toiimg.com/photo/72975551.cms",
+    },
+    {
+      title: "Sixth Card",
+      menbersOnly: true,
       cover:
         "https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528__340.jpg",
     },
@@ -20,13 +42,9 @@
 
 <div class="container mx-auto mt-4">
   <div class="grid grid-cols-2 gap-4">
-    <Card {...card1} />
-    <Card {...card2} />
-    <Card {...card1} />
-    <Card {...card2} />
-    <Card {...card1} />
-    <Card {...card2} />
-    <Card {...card1} />
-    <Card {...card2} />
+    {#each data as item}
+      {@debug item}
+      <Card {...item} />
+    {/each}
   </div>
 </div>
