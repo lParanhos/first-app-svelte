@@ -1,5 +1,4 @@
 <script>
-  import { each } from "svelte/internal";
   import Card from "./Card.svelte";
 
   const data = [
@@ -46,7 +45,7 @@
   <div class="grid grid-cols-2 gap-4">
     {#each data as item}
       {@debug item}
-      <Card {...item} />
+      <Card {...item} on:cardClicked />
     {/each}
   </div>
 </div>

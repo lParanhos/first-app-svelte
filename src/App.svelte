@@ -2,4 +2,4 @@
   import List from "./List.svelte";
 </script>
 
-<List />
+<List on:cardClicked={(ev) => console.log('App.Svelte', ev.detail)} />

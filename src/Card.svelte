@@ -1,17 +1,21 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
   export let title = "My default title";
   export let cover =
     "https://i.pinimg.com/originals/ca/76/0b/ca760b70976b52578da88e06973af542.jpg";
   export let menbersOnly = false;
   export let id = 0;
 
-  const clickHandler = () => console.log(id);
+  const dispatch = createEventDispatcher();
+
+  const clickHandler = (ev) => dispatch("cardClicked", { ev, id });
 </script>
 
-<a
-  href="https://leandroparanhos.netlify.app/"
-  on:click|preventDefault={clickHandler}>
-  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+<div
+  class="w-full max-w-sm lg:max-w-full lg:flex cursos-pointer"
+  on:click={clickHandler}>
+  <div class="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer">
     <img class="w-full" src={cover} alt="Sunset in the mountains" />
     <div class="px-6 py-4">
       {#if menbersOnly}
@@ -44,4 +48,4 @@
       </span>
     </div>
   </div>
-</a>
+</div>
