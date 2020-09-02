@@ -1,7 +1,12 @@
 <script>
   import MovieCard from "./MovieCard.svelte";
+  import { store } from "../../store";
 
   export let movies = [];
+
+  store.subscribe((state) => {
+    movies = state.movies;
+  });
 </script>
 
 <div class="mb-16">
