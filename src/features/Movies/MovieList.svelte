@@ -1,12 +1,6 @@
 <script>
   import MovieCard from "./MovieCard.svelte";
-  import { store } from "../../store";
-
-  export let movies = [];
-
-  store.subscribe((state) => {
-    movies = state.movies;
-  });
+  import { movies } from "../../store";
 </script>
 
 <div class="mb-16">
@@ -15,11 +9,11 @@
       Nenhum filme encontrado
     </h3> -->
     <ul class="m-0 xl:grid xl:grid-cols-2">
-      {#each movies as movie}
+      {#each $movies as movie}
         <li
           class="p-1 mx-0 my-3 bg-white shadow cursor-pointer xl:mx-3
             sm:rounded-lg xl:justify-between">
-          <MovieCard />
+          <MovieCard {movie} />
         </li>
       {/each}
     </ul>
