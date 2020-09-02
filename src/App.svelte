@@ -1,5 +1,5 @@
 <script>
-  import List from "./List.svelte";
+  import Movies from "./features/Movies/Movies.svelte";
 </script>
 
-<List on:cardClicked={(ev) => console.log('App.Svelte', ev.detail)} />
+<Movies />
