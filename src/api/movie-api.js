@@ -11,5 +11,12 @@ export const fetchMovies = async (term) => {
   store.set({
     ...INITIAL_STATE,
     movies,
+    wasSearched: true
   });
+}
+
+export const resetMovies = () =>  {
+  store.set({
+    ...INITIAL_STATE,
+  }); 
 }

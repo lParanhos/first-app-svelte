@@ -1,12 +1,15 @@
 <script>
-  import { fetchMovies } from "../../api/movie-api";
+  import { fetchMovies, resetMovies } from "../../api/movie-api";
 
-  let term = "pulp";
+  let term = "";
 
   const search = () => {
     fetchMovies(term);
   };
-  fetchMovies(term);
+
+  $: if (term === "") {
+    resetMovies();
+  }
 </script>
 
 <div class="mt-3">
