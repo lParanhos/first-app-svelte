@@ -3,7 +3,7 @@ module.exports = {
     enable: process.env.NODE_ENV === 'production',
     content: [
       './public/index.html',
-      './src/*.svelte'
+      './src/**/*.svelte'
     ]
   },
   theme: {
