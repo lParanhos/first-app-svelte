@@ -4,6 +4,22 @@
   "total_pages": 2,
   "results": [
     {
+      "popularity": 29.839,
+      "vote_count": 9868,
+      "video": false,
+      "poster_path": "/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
+      "id": 607,
+      "adult": false,
+      "backdrop_path": "/1GJvBE7UWU1WOVi0XREl4JQc7f8.jpg",
+      "original_language": "en",
+      "original_title": "Men in Black",
+      "genre_ids": [28, 12, 35, 878],
+      "title": "Men in Black",
+      "vote_average": 7.1,
+      "overview": "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent Kay and new recruit Agent Jay find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies.",
+      "release_date": "1997-07-02"
+    },
+    {
       "popularity": 2.304,
       "id": 687134,
       "video": true,
@@ -34,22 +50,6 @@
       "vote_average": 8,
       "overview": "Go behind the scenes and on the set of Men In Black 3.",
       "release_date": "2012-11-29"
-    },
-    {
-      "popularity": 29.839,
-      "vote_count": 9868,
-      "video": false,
-      "poster_path": "/uLOmOF5IzWoyrgIF5MfUnh5pa1X.jpg",
-      "id": 607,
-      "adult": false,
-      "backdrop_path": "/1GJvBE7UWU1WOVi0XREl4JQc7f8.jpg",
-      "original_language": "en",
-      "original_title": "Men in Black",
-      "genre_ids": [28, 12, 35, 878],
-      "title": "Men in Black",
-      "vote_average": 7.1,
-      "overview": "After a police chase with an otherworldly being, a New York City cop is recruited as an agent in a top-secret organization established to monitor and police alien activity on Earth: the Men in Black. Agent Kay and new recruit Agent Jay find themselves in the middle of a deadly plot by an intergalactic terrorist who has arrived on Earth to assassinate two ambassadors from opposing galaxies.",
-      "release_date": "1997-07-02"
     }
   ]
 }

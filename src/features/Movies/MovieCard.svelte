@@ -9,7 +9,7 @@
       <img
         loading="lazy"
         class="rounded-lg md:w-56 md:rounded"
-        src={`${BACKDROP_BASE_URL}/${movie.backdrop_path}`}
+        src={`${BACKDROP_BASE_URL}${movie.backdrop_path}`}
         title={movie.title}
         alt={`Poster: ${movie.title}`} />
     </div>
